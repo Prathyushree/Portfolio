@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Leakage Detection System</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background:#081120;
+            font-family:Arial, sans-serif;
+            display:flex;
+            justify-content:center;
+            padding:40px;
+            color:white;
+        }
+
+        .page{
+            width:800px;
+            background:#111827;
+            padding:50px;
+            border-radius:20px;
+            box-shadow:0 0 20px rgba(0,0,0,0.5);
+        }
+
+        /* TOP BUTTONS */
+
+        .top-buttons{
+            display:flex;
+            justify-content:space-between;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            text-decoration:none;
+            background:#2563eb;
+            color:white;
+            padding:12px 22px;
+            border-radius:10px;
+            font-size:16px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#3b82f6;
+            transform:translateY(-2px);
+        }
+
+        /* HEADINGS */
+
+        h1{
+            font-size:42px;
+            color:#60a5fa;
+            margin-bottom:20px;
+        }
+
+        h2{
+            font-size:30px;
+            color:#93c5fd;
+            margin-top:50px;
+            margin-bottom:20px;
+        }
+
+        /* PARAGRAPHS */
+
+        p{
+            font-size:20px;
+            line-height:1.9;
+            color:#d1d5db;
+        }
+
+        /* TECH STACK */
+
+        .tech-stack{
+            display:flex;
+            flex-wrap:wrap;
+            gap:12px;
+            margin-top:25px;
+            margin-bottom:35px;
+        }
+
+        .tech{
+            background:#1e293b;
+            color:#93c5fd;
+            padding:10px 18px;
+            border-radius:30px;
+            font-size:16px;
+        }
+
+        /* MAIN IMAGE */
+
+        .main-image{
+            width:100%;
+            border-radius:15px;
+            margin-top:35px;
+            transition:0.4s;
+        }
+
+        .main-image:hover{
+            transform:scale(1.02);
+            box-shadow:0 0 20px rgba(96,165,250,0.4);
+        }
+
+        /* IMAGE SECTION */
+
+        .image-box{
+            display:flex;
+            gap:25px;
+            align-items:center;
+            margin-top:40px;
+            margin-bottom:40px;
+        }
+
+        .image-box img{
+            width:320px;
+            border-radius:12px;
+            transition:0.4s;
+        }
+
+        .image-box img:hover{
+            transform:scale(1.03);
+            box-shadow:0 0 20px rgba(96,165,250,0.4);
+        }
+
+        /* FEATURES */
+
+        ul{
+            margin-left:25px;
+            margin-top:20px;
+        }
+
+        li{
+            font-size:20px;
+            margin-bottom:15px;
+            color:#d1d5db;
+        }
+
+        /* CONCLUSION */
+
+        .conclusion{
+            margin-top:50px;
+            background:#1e293b;
+            padding:25px;
+            border-radius:15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- TOP BUTTONS -->
+
+    <div class="top-buttons">
+
+        <a href="index.html" class="btn">
+            ← Back to Portfolio
+        </a>
+
+        <a href="https://github.com/" class="btn" target="_blank">
+            View GitHub
+        </a>
+
+    </div>
+
+    <!-- TITLE -->
+
+    <h1>Water Leakage Detection & Control System</h1>
+
+    <!-- INTRO -->
+
+    <p>
+        The Water Leakage Detection & Control System is an IoT-based smart monitoring
+        solution developed using NodeMCU, water sensors, flow sensors,
+        relay modules, and Blynk cloud integration.
+        The system is designed to detect abnormal water leakage conditions
+        in real time and automatically stop water flow
+        to prevent unnecessary water wastage.
+    </p>
+
+    <!-- TECH STACK -->
+
+    <div class="tech-stack">
+
+        <div class="tech">NodeMCU</div>
+
+        <div class="tech">IoT</div>
+
+        <div class="tech">Blynk</div>
+
+        <div class="tech">Relay Module</div>
+
+        <div class="tech">Water Sensor</div>
+
+        <div class="tech">Flow Sensor</div>
+
+        <div class="tech">HTML</div>
+
+        <div class="tech">CSS</div>
+
+    </div>
+
+    <!-- MAIN IMAGE -->
+
+    <img src="project-images/hardware-setup.jpeg" class="main-image">
+
+    <!-- OVERVIEW -->
+
+    <h2>📘 Project Overview</h2>
+
+    <p>
+        This system continuously monitors water flow and detects abnormal leakage
+        conditions using embedded sensors and automation logic.
+        Once leakage is detected, the relay module automatically controls
+        the solenoid valve to stop water flow and prevent unnecessary water wastage.
+    </p>
+
+    <!-- CIRCUIT -->
+
+    <div class="image-box">
+
+        <img src="project-images/circuit-diagram.jpeg">
+
+        <p>
+            The circuit diagram represents the complete integration
+            of NodeMCU, water sensors, relay modules,
+            and solenoid valve connections.
+            The system processes sensor data and performs automated control actions.
+        </p>
+
+    </div>
+
+    <!-- FEATURES -->
+
+    <h2>✨ Features</h2>
+
+    <ul>
+
+        <li>Real-time water leakage monitoring</li>
+
+        <li>Automatic water flow control</li>
+
+        <li>Blynk mobile notifications</li>
+
+        <li>IoT-based remote monitoring</li>
+
+        <li>Smart and scalable water management solution</li>
+
+    </ul>
+
+    <!-- BLYNK -->
+
+    <div class="image-box">
+
+        <img src="project-images/blynk-setup-integration.jpeg">
+
+        <p>
+            Blynk cloud integration was configured for real-time monitoring,
+            mobile notifications, and event triggering.
+            The dashboard allows users to monitor leakage status remotely.
+        </p>
+
+    </div>
+
+    <!-- NOTIFICATION -->
+
+    <div class="image-box">
+
+        <img src="project-images/notification-code-integration.jpeg">
+
+        <p>
+            Notification services and authentication tokens were integrated
+            into the NodeMCU firmware to provide instant leakage alerts
+            directly to the user’s smartphone.
+        </p>
+
+    </div>
+
+    <!-- OUTPUT -->
+
+    <div class="image-box">
+
+        <img src="project-images/output.jpeg">
+
+        <p>
+            The final output successfully demonstrated leakage detection,
+            automated valve control, and real-time IoT notifications,
+            making the system efficient and reliable
+            for smart water management.
+        </p>
+
+    </div>
+
+    <!-- CONCLUSION -->
+
+    <div class="conclusion">
+
+        <h2>✅ Conclusion</h2>
+
+        <p>
+            This project successfully demonstrates an IoT-enabled
+            smart water leakage monitoring and control system
+            capable of reducing water wastage
+            through automation and real-time monitoring technologies.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
